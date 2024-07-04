@@ -1,0 +1,17 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ReactRouter",
+  "steps": [
+    {
+      "file": "src/main.jsx",
+      "description": "Después de la descarga, luego se importa en el main.jsx",
+      "line": 4
+    },
+    {
+      "file": "src/main.jsx",
+      "description": "Luego se declara router con esos atributos.\r\nEn element, va el HOC que le sigue después de main.jsx",
+      "line": 7
+    }
+  ],
+  "ref": "master"
+}
