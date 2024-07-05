@@ -11,6 +11,16 @@
       "file": "src/main.jsx",
       "description": "Luego se declara router con esos atributos.\r\nEn element, va el HOC que le sigue después de main.jsx",
       "line": 7
+    },
+    {
+      "file": "src/main.jsx",
+      "description": "Crear este tag. ",
+      "line": 17
+    },
+    {
+      "file": "src/App.jsx",
+      "description": "Se hace la configración de las rutas, y se crea el comodín",
+      "line": 13
     }
   ],
   "ref": "master"
