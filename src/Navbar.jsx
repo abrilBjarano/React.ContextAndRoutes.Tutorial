@@ -8,7 +8,7 @@ const getNavLinkClass = ({ isActive }) => {
 export const Navbar = ({ routes }) => {
 
    return (
-      <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3">
+      <nav className="navbar navbar-expand bg-body-tertiary rounded-3">
       <div className="container-fluid">
 
          <a className="navbar-brand">Context</a>
