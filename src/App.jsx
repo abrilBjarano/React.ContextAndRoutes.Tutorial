@@ -8,10 +8,18 @@ import { Navbar } from "./Navbar";
 
 
 export const App = () => {
+
+  const routes = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Login', path: '/login' },
+  ]
+
+
   return (
     <>
       <h1>App</h1>
-      <Navbar />
+      <Navbar routes={ routes } />
       <hr />
 
       {/* 🧠 Pensandolo bien, estas rutas se verían más organizadas en un componente separado */}

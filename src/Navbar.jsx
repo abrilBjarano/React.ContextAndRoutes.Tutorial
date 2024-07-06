@@ -1,11 +1,32 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+// const getNavLinkClass = ({ isActive }) => `nav-link ${ isActive ? 'active' : '' }`;
+const getNavLinkClass = ({ isActive }) => {
+   return `nav-link ${ isActive ? 'active' : '' }`;
+}
+
+export const Navbar = ({ routes }) => {
+
    return (
-      <>
-         <Link to="/">Home</Link>
-         <Link to="/about">About</Link>
-         <Link to="/login">Login</Link>
-      </>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3">
+      <div className="container-fluid">
+
+         <a className="navbar-brand">Context</a>
+
+         <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+
+               { routes.map( route => (
+                  <NavLink 
+                     className={ getNavLinkClass } key={ route.path } to={ route.path }>
+                     { route.name }
+                  </NavLink>
+               ))}               
+
+            </ul>
+         </div>
+      </div>
+   </nav>
    )
 }
+ 
