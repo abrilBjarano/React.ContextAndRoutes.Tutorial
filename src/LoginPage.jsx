@@ -3,6 +3,7 @@ import { UserContext } from "./context/UserContext";
 
 export const LoginPage = () => {
 
+    // Aquí se está utilizando el setUser para cambiar desde aquí el value del user.
     const { user, setUser }  = useContext( UserContext );
 
     const onSetUser = () => {
