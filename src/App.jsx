@@ -5,6 +5,7 @@ import { AboutPage } from "./AboutPage";
 import { LoginPage } from "./LoginPage";
 
 import { Navbar } from "./Navbar";
+import { UserProvider } from "./context/UserProvider";
 
 
 export const App = () => {
@@ -17,7 +18,7 @@ export const App = () => {
 
 
   return (
-    <>
+    <UserProvider>
       <h1>App</h1>
       <Navbar routes={ routes } />
       <hr />
@@ -31,6 +32,6 @@ export const App = () => {
         {/* el comodín en inglés se conoce como wildcard */}
         <Route path="/*" element={ <Navigate to="/" /> } />
       </Routes>
-    </>
+    </UserProvider>
   )
 }
