@@ -1,0 +1,42 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ReactRouter",
+  "steps": [
+    {
+      "file": "src/main.jsx",
+      "description": "Después de la instalación, se hace esta importación.",
+      "line": 4
+    },
+    {
+      "file": "src/main.jsx",
+      "description": "Se crea el const router con el *, y el elemento vendría siendo el HOC después del main.",
+      "line": 11
+    },
+    {
+      "file": "src/main.jsx",
+      "description": "Se crea este tag con la constante router.",
+      "line": 21
+    },
+    {
+      "file": "src/App.jsx",
+      "description": "Se configuran las rutas con los elementos y paths y ya quedo la configuración de las rutas.\r\nAhora falta que las linkeemos con algún otro componente, como un navbar o un botón; en este caso, un navbar.",
+      "line": 26
+    },
+    {
+      "file": "src/App.jsx",
+      "description": "Creo const routes con un arreglo de objetos donde viene el name y el path.",
+      "line": 13
+    },
+    {
+      "file": "src/Navbar.jsx",
+      "description": "Creo el componente Navbar y le pongo de props las routes que va a recibir del App.jsx",
+      "line": 8
+    },
+    {
+      "file": "src/Navbar.jsx",
+      "description": "Creo el spread de cada route y uso el NavLink",
+      "line": 19
+    }
+  ],
+  "ref": "a81cbd62cea6f39345d0ee20d076eb0ea86e7075"
+}
