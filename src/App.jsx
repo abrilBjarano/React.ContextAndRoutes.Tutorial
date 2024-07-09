@@ -19,7 +19,6 @@ export const App = () => {
 
   return (
     <UserProvider>
-      <h1>App</h1>
       <Navbar routes={ routes } />
       <hr />
 
