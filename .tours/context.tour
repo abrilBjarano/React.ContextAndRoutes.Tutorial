@@ -1,0 +1,32 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Context",
+  "steps": [
+    {
+      "file": "src/context/UserContext.jsx",
+      "description": "Primero se crea el Contexto.",
+      "line": 3
+    },
+    {
+      "file": "src/context/UserProvider.jsx",
+      "description": "Se crea el Provider con el children como arg.\r\nEl children son los hijos ( componentes ) en lo que va a renderizar la información del contexto.",
+      "line": 10
+    },
+    {
+      "file": "src/context/UserProvider.jsx",
+      "description": "Se crea la etiqueta con el Contexto + Provider con el value que va a compartir a sus hijos.\r\nEl value es la información, usalmente es un objeto.",
+      "line": 17
+    },
+    {
+      "file": "src/context/UserProvider.jsx",
+      "description": "En este caso se crea un useState con un user que se va a compartir dentro de los children.",
+      "line": 12
+    },
+    {
+      "file": "src/LoginPage.jsx",
+      "description": "Una vez expuesta la información, sigue darle ACCESO a los hijos que lo ocupen  de esta forma.",
+      "line": 7
+    }
+  ],
+  "ref": "aed99d43d1d10bd068c264212e75b8e53f697ae4"
+}
